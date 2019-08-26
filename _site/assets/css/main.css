@@ -802,7 +802,7 @@ h2.resp-accordion:hover {
     display: inline-block;
     float: left;
     font-family: 'Garamond Regular', Times, serif;
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 10px;
     /* text-transform: uppercase; */
     padding-top: 2px;
@@ -1673,10 +1673,9 @@ ul.info-post li {
 #section-title {
     margin: 0 0 15px 0;
     padding: 5px 0 8px 0;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     height: 42px;
-    font-size: 16px;
     text-align: left;
     line-height: 28px;
     color:#fff;
@@ -1989,8 +1988,10 @@ ul.info-post li {
 ---------------------------------------------------*/
 
 .research-article {
-    padding-top: 37px;
-    padding-bottom: 35px;
+    /* padding-top: 37px;
+    padding-bottom: 35px; */
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .research-article .post_media{
@@ -2030,9 +2031,11 @@ ul.info-post li {
     max-width: 100%;
     line-height: 1;
     width: 37%;
+    height: 29%;
     float: left;
     overflow: hidden;
     position: relative;
+    max-height: 205px;
 	/* height: 205px;*/
 }
 
@@ -2041,11 +2044,11 @@ ul.info-post li {
 }
 
 .research-article .media img {
-     width: 100% !important;
+    width: 100% !important;
 }
 
 .media .img-hover {
-     width: 100% !important;
+    width: 100% !important;
 }
 
 .research-article:first-child {
@@ -2075,13 +2078,14 @@ ul.info-post li {
     float: right;
     width: 56%;
     margin-top: 28px;
+    font-size: 20px;
 }
 .research-article .info {
     margin: 0;
     padding: 0;
     float: left;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 7px;
     list-style: none;
 }
 .research-article .info li {
@@ -2264,10 +2268,10 @@ ul.info-post li {
     border: 1px solid #dedede;
     background: #fafafa;
     display: inline-block;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    -o-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
 }
 #sidebar-right .search-research i, #sidebar-left .search-research i {
     cursor: pointer;
@@ -2288,10 +2292,9 @@ ul.info-post li {
 #section-title {
     margin: 0 0 15px 0;
     padding: 5px 0 8px 0;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     height: 42px;
-    font-size: 16px;
     text-align: left;
     line-height: 28px;
     color:#fff;

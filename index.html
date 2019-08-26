@@ -70,8 +70,8 @@ layout: default
         <!-- Profile info -->
         <div id="profile_info">
             <h1 id="name" class="transition-02">{{ site.yourname }}</h1>
-            {% comment %} <h4 class="line">{{ site.title }}</h4>
-            <h6><span class="fa fa-map-marker"></span> {{ site.location }}</h6> {% endcomment %}
+            <h4 class="line">{{ site.title }}</h4>
+            {% comment %} <h6><span class="fa fa-map-marker"></span> {{ site.location }}</h6> {% endcomment %}
         </div>
         <!-- End Profile info -->  
     	
@@ -90,9 +90,9 @@ layout: default
 
         <br style=“line-height:5;”>
 
-        <p>
+        {% comment %} <p>
             Email: xueqianl at andrew dot cmu dot edu
-        </p>
+        </p> {% endcomment %}
         <!-- Name -->
         <div id="profile_social">
             {% comment %} <h6>My Social Profiles</h6> {% endcomment %}
@@ -136,7 +136,7 @@ layout: default
 
         <li>
             Publication
-            <span class="tite-list">portfolio</span>
+            <span class="tite-list">publications</span>
         </li>
 
         <li>
@@ -182,15 +182,13 @@ layout: default
 
 {% include /research.html %}
 
-{% include /contact.html %}
+{% include /publications.html %}
 
 
-{% include /profile.html %}
+{% include /aboutme.html %}
 
 
 {% include /blog.html %}
-
-{% include /contact.html %}
 
 
 </div>
