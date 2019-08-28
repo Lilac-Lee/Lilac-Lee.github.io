@@ -808,6 +808,17 @@ h2.resp-accordion:hover {
     padding-top: 2px;
     margin-bottom: 5px;
 }
+
+.text_content_p {
+    display: inline-block;
+    float: left;
+    font-family: 'Garamond Regular', Times, serif;
+    font-size: 16px;
+    /* margin-top: 10px; */
+    /* text-transform: uppercase; */
+    /* padding-top: 2px; */
+    /* margin-bottom: 5px; */
+}
 /*--------------------------------------------------
 ---------------------- Profile ---------------------
 ---------------------------------------------------*/
@@ -1649,10 +1660,10 @@ ul.info-post li {
     border: 1px solid #dedede;
     background: #fafafa;
     display: inline-block;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    -o-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
 }
 #sidebar-right .search-blog i, #sidebar-left .search-blog i {
     cursor: pointer;
