@@ -1054,6 +1054,7 @@ ul.about {
 .widget-profil #profile_social
 {
     padding-top: 15px;
+    padding-left: 15px;
     position: absolute;
     bottom: -100px;
 }
@@ -1063,7 +1064,7 @@ ul.about {
     height: 45px;
     line-height: 45px;
     margin: 0px 15px 0px 0px;
-    padding: 15px 0px 0px 0px;
+    padding: 0;
     border-width: 1px;
     border-style: solid;
     text-align: center;
