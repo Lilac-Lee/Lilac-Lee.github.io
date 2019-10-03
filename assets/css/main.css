@@ -3,9 +3,9 @@
 ----------------------- Base styles ----------------
 ---------------------------------------------------*/
 
-/* @media (min-width: 1200px) {
+/* @media (max-width: 1400px) {
     .container {
-        width: 800px !important;
+        width: 90px !important;
     }
 } */
 
@@ -1086,13 +1086,6 @@ ul.about {
 
 @media only screen and (min-width: 1500px) {
 
-    .widget-profil{ 
-        width:98%;	
-        /* height: 300px !important; */
-        /* margin-bottom: 20px; */
-        /* float: none; */
-    }
-
     .widget-profil #profile_social a{ 
         width: 45px;	
         height: 45px;	
@@ -1107,13 +1100,6 @@ ul.about {
 }
 
 @media only screen and (max-width: 1499px) {
-
-    .widget-profil{ 
-        width:98%;	
-        /* height: 300px !important; */
-        /* margin-bottom: 20px; */
-        /* float: none; */
-    }
 
     .widget-profil #profile_social a { 
         width: 34px;	
