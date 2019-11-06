@@ -807,7 +807,7 @@ h2.resp-accordion:hover {
     display: inline-block;
     float: left;
     font-family: 'Garamond Regular', Times, serif;
-    font-size: 18px;
+    font-size: 17px;
     /* margin-top: 10px; */
     /* text-transform: uppercase; */
     /* padding-top: 2px; */
@@ -2210,7 +2210,7 @@ ul.info-post li {
 .research-article .research-content {
     float: right;
     width: 56%;
-    margin-top: 28px;
+    margin-top: 12px;
     font-size: 20px;
 }
 .research-article .info {
