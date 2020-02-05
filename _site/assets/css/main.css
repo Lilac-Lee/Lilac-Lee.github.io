@@ -609,10 +609,12 @@ h2.resp-accordion:hover {
     box-sizing:border-box;		
 }
 
+
+
 /*--------------------------------------------------
 ----------------------- Portfolio ------------------
 ---------------------------------------------------*/
-/* 
+
 .container-portfolio { 
     position: relative; 
     width: 100%; 
@@ -737,11 +739,11 @@ h2.resp-accordion:hover {
         display: none;
     }
 
-} */
+}
 
 /* #Clearing */
 /* Self Clearing Goodness */
-/* .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
 .clearfix:before,
 .clearfix:after,
@@ -767,7 +769,9 @@ h2.resp-accordion:hover {
     visibility: hidden;
     width: 0;
     height: 0;
-} */
+}
+
+
 
 /*--------------------------------------------------
 ---------------------- Title  ---------------------
