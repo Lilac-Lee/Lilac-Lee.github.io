@@ -1024,7 +1024,8 @@ ul.about {
 
 .widget-profil  icon {
     font-size: 30px;
-    margin: 20px 15px 0px 0px
+    margin: 20px 15px 0px 0px;
+    color: rgb(113, 8, 233);
 }
 
 .widget-profil #profile_desc
@@ -1043,6 +1044,14 @@ ul.about {
     padding-top: 15px;
     position: absolute;
     bottom: -100px;
+}
+
+#profile_social_icon a{
+    color : rgb(113, 8, 233);
+}
+
+#profile_social_icon a:hover{
+    background-color: transparent;
 }
 
 #profile_social a{
@@ -1067,6 +1076,7 @@ ul.about {
 #profile_social a:hover{
     background-color: rgb(113, 8, 233);
 }
+
 .widget-profil .image-holder{
     position: relative;
     margin: 15px auto;
@@ -1956,7 +1966,7 @@ ul.info-post li {
     transition: all 0.3s ease-in-out;
 }
 #archive .categories .item a:hover {
-    color: #008ec3;
+    color: rgb(113, 8, 233);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -2594,7 +2604,7 @@ ul.info-post li {
     transition: all 0.3s ease-in-out;
 }
 #archive .categories .item a:hover {
-    color: #008ec3;
+    color: rgb(113, 8, 233);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
