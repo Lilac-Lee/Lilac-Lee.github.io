@@ -1022,6 +1022,11 @@ ul.about {
     border-left: 0px;
 }
 
+.widget-profil  icon {
+    font-size: 30px;
+    margin: 20px 15px 0px 0px
+}
+
 .widget-profil #profile_desc
 {
     padding-top: 15px;
