@@ -612,7 +612,7 @@ h2.resp-accordion:hover {
 /*--------------------------------------------------
 ----------------------- Portfolio ------------------
 ---------------------------------------------------*/
-/* 
+
 .container-portfolio { 
     position: relative; 
     width: 100%; 
@@ -712,7 +712,7 @@ h2.resp-accordion:hover {
 }
 
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
 
     #portfoliolist .portfolio {
         width:48%;
@@ -767,7 +767,7 @@ h2.resp-accordion:hover {
     visibility: hidden;
     width: 0;
     height: 0;
-} */
+}
 
 /*--------------------------------------------------
 ---------------------- Title  ---------------------
