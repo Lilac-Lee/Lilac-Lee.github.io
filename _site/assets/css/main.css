@@ -613,6 +613,16 @@ h2.resp-accordion:hover {
 ----------------------- Portfolio ------------------
 ---------------------------------------------------*/
 
+a[data-title]:hover:after{
+    content: attr(data-title);
+    font-size: 16px;
+    color: #0a1938;
+    position: absolute;
+    left: 2px;
+    /* pointer-events:none; */
+    /* opacity:1; */
+}
+
 .container-portfolio { 
     position: relative; 
     width: 100%; 
@@ -621,7 +631,9 @@ h2.resp-accordion:hover {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;	
+    font-size:16px;
 }
+
 
 #filters {
     margin:1%;
@@ -659,18 +671,21 @@ h2.resp-accordion:hover {
     display:none;
     float:left;
     overflow:hidden;
+    font-size: 16px;
 }
 
 .portfolio-wrapper {
     overflow:hidden;
     position: relative !important;
-    background: #666;
+    background: #fff;
     cursor:pointer;
+    font-size: 16px;
 }
 
 .portfolio img {
     max-width:100%;
     position: relative;
+    font-size: 16px;
 }
 
 .portfolio .label {
@@ -690,7 +705,7 @@ h2.resp-accordion:hover {
 }
 
 .portfolio .label-text {
-    color:#fff;
+    color:rgb(113, 8, 233);
     position: relative;
     z-index:500;
     padding:5px 8px;
@@ -699,16 +714,25 @@ h2.resp-accordion:hover {
 
 .portfolio .text-title {
     display:block;
-    font-size:13px;
-    margin: 1px;
-    color : #fff;
+    font-size:17px;
+    margin: 1px 1px;
+    color: rgb(113, 8, 233);
     text-transform:capitalize;
 }
+
+.portfolio .text-href {
+    display: block;
+    font-size:16px;
+    color: #0a1938;
+}
+
 #fancybox-title {
     margin-left: 10px !important;
     width: 380px !important;
     bottom: 10px !important;
     display: block !important;
+    color: #0a1938;
+    font-size: 16px;
 }
 
 
