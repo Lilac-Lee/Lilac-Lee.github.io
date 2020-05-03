@@ -1323,6 +1323,18 @@ ul.about {
     #profile_desc {
         display:none;
     }
+
+    .research-article .media {
+        margin-top: 15px;
+        display: block;
+        max-width: 100%;
+        line-height: 1;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        /* height: 205px;*/
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -2332,11 +2344,14 @@ ul.info-post li {
         display: block;
         max-width: 100%;
         line-height: 1;
-        width: 100%;
+        width: 70%;
         overflow: hidden;
         position: relative;
-        /* height: 205px;*/
+        height: 60%;
+        align-items: center;
+        max-height: 500px;
     }
+
     .research-article .research-content {
         width: 100%;
         margin-top: 28px;
@@ -3178,6 +3193,10 @@ ul.info-post li {
         width: 100% !important;
     }
 
+    .research-article .research-content .text_content_p{
+        font-size: 20px;
+    }
+
 }
 
 #loading_page {
@@ -3243,6 +3262,18 @@ ul.info-post li {
 
     h5, .h5 {
         font-size: 9px !important;
+    }
+
+    .research-article .media {
+        margin-top: 15px;
+        display: block;
+        max-width: 100%;
+        line-height: 1;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        /* height: 205px;*/
     }
 
 }
@@ -3335,6 +3366,18 @@ ul.info-post li {
     section.button-demo {
         width: 100%;
     }
+
+    .research-article .media {
+        margin-top: 15px;
+        display: block;
+        max-width: 100%;
+        line-height: 1;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        /* height: 205px;*/
+    }
 }
 
 @media screen and (max-width: 384px) {
@@ -3378,6 +3421,22 @@ ul.info-post li {
         margin-left: 0;
     }
 
+    .research-article .research-content .text_content_p{
+        font-size: 20px;
+    }
+
+    .research-article .media {
+        margin-top: 15px;
+        display: block;
+        max-width: 100%;
+        line-height: 1;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        /* height: 205px;*/
+    }
+
 }
 
 .h3_modal {
@@ -3388,7 +3447,7 @@ ul.info-post li {
 
 @media screen and (max-width: 554px) {
     .resp-tabs-container h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .blog-article .info li:first-child {
@@ -3484,6 +3543,18 @@ ul.info-post li {
 
     .research-article a.read_m { width: 100%; }
 
+    .research-article .media {
+        margin-top: 15px;
+        display: block;
+        max-width: 100%;
+        line-height: 1;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        /* height: 205px;*/
+    }
+
 }
 
 
@@ -3491,6 +3562,17 @@ ul.info-post li {
     .resp-vtabs .resp-tabs-container { 
         /* width:89%; */
         width: 100%;
+    }
+
+    .research-article .media {
+        margin-top: 15px;
+        display: block;
+        max-width: 100%;
+        line-height: 1;
+        overflow: hidden;
+        position: relative;
+        height: 40%;
+        height: 300px;
     }
 }
 
