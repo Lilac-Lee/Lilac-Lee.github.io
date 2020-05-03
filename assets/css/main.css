@@ -3563,16 +3563,16 @@ ul.info-post li {
         /* width:89%; */
         width: 100%;
     }
-
+    
     .research-article .media {
         margin-top: 15px;
         display: block;
-        max-width: 100%;
+        max-width: 40%;
         line-height: 1;
         overflow: hidden;
         position: relative;
-        height: 40%;
-        height: 300px;
+        max-height: 40%;
+        /* height: 205px;*/
     }
 }
 
@@ -3589,6 +3589,19 @@ ul.info-post li {
 @media screen and (min-width: 1200px) {
     .resp-vtabs .resp-tabs-container { 
         width: 100%;
+    }
+    .research-article .media {
+        margin-top: 15px;
+        display: block;
+        max-width: 33%;
+        line-height: 1;
+        overflow: hidden;
+        position: relative;
+        max-height: 40%;
+        /* height: 205px;*/
+    }
+    .research-article .research-content .text_content_p{
+        font-size:18px;
     }
 }
 
