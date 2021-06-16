@@ -19,7 +19,7 @@ The theme would look like this
 - next: sudo gem install nokogiri
 - next: sudo bundle update
 - next: sudo bundle install
-- then: bundle exec jekyll serve
+- then: bundle exec jekyll serve --port 7777
 
 Check out for more themes: [Jekyll Themes](http://jekylltheme.org)
 
