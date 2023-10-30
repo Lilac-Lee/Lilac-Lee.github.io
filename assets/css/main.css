@@ -837,6 +837,11 @@ a[data-title]:hover:after{
     /* padding-top: 2px; */
     /* margin-bottom: 5px; */
 }
+
+.text_content_bullet{
+    display: list-item;
+    list-style-type: disc;
+}
 /*--------------------------------------------------
 ---------------------- Profile ---------------------
 ---------------------------------------------------*/
