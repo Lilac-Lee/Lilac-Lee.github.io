@@ -842,7 +842,7 @@ a[data-title]:hover:after{
     display: list-item;
     list-style-type: disc;
     font-family: 'Garamond Regular', Times, serif;
-    font-size: 22px;
+    font-size: 17px;
     padding-left: 25px;
 }
 /*--------------------------------------------------
@@ -2205,6 +2205,14 @@ ul.info-post li {
     background: rgba(255, 255, 255, 0.8);
     padding: 15px;
     padding-top:0;
+}
+
+.research-article .post_media .text_content_bullet{
+    display: list-item;
+    list-style-type: disc;
+    font-family: 'Garamond Regular', Times, serif;
+    font-size: 17px;
+    padding-left: 25px;
 }
 
 .research-article .post_media_detail{
