@@ -842,8 +842,8 @@ a[data-title]:hover:after{
     display: list-item;
     list-style-type: disc;
     font-family: 'Garamond Regular', Times, serif;
-    font-size: 17px;
-    padding-left: 25px;
+    font-size: 18px;
+    padding-left: 3px;
 }
 /*--------------------------------------------------
 ---------------------- Profile ---------------------

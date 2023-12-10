@@ -6,7 +6,7 @@
 <html lang="no-js"> <!--<![endif]-->  
     <head>
 
-        <title>Xue-Qian's Homepage</title>
+        <title>Xue-qian's Homepage</title>
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -140,11 +140,11 @@
     <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
         <!-- Profile info -->
         <div id="profile_info">
-            <h1 id="name" class="transition-02">LI, Xue-Qian <span style="font-family:STXingkai, Kaiti, STKaiti, Xingkai SC"></span></h1>
-            
+            <h1 id="name" class="transition-02">Xue-qian Li <span style="font-family:STXingkai, Kaiti, STKaiti, Xingkai SC"></span></h1>
             <p>
                 <br>
-            	I am currently a research intern at Argo AI, working with <a href= https://www.adelaide.edu.au/directory/simon.lucey/ target='_blank'>Dr. Simon Lucey</a> and <a href=https://jhonykaesemodel.com/ target='_blank'> Dr. Jhony Kaesemodel Pontes</a>.
+                I am a PhD student at the University of Adelaide.
+            	I was a "long-term" research intern at Argo AI, fortunately working with <a href= https://scholar.google.com/citations?user=vmAe35UAAAAJ&hl=en target='_blank'>Dr. Simon Lucey</a> and <a href=https://jhonykaesemodel.com/ target='_blank'> Dr. Jhony Kaesemodel Pontes</a>.
             </p>
             <div class="clear"></div>
             <div class="clear"></div>
@@ -153,13 +153,11 @@
     	
     	
         <div class="clear"></div>
-        
+
         <!-- Name -->
         <div id="profile_social">
-            
             <a href="https://github.com/Lilac-Lee" target='_blank'><i class="fa fa-github"></i></a>
             <a href="https://scholar.google.com/citations?user=aNnRnv0AAAAJ&hl=en" target='_blank'><i class="ai ai-google-scholar-square ai"></i></a>
-            
             <a href="https://twitter.com/xueqianli007" target='_blank'><i class="fa fa-twitter"></i></a>
             <div class="clear"></div>
         </div>
@@ -176,20 +174,23 @@
 <div id="verticalTab">
 
     <ul class="resp-tabs-list">
-        
-
         <li>
             Research
             
         </li>
 
-        <li>
+        <!-- <li>
             Academic
+            
+        </li> -->
+
+        <li>
+            Publication
             
         </li>
 
         <li>
-            Publication
+            About Me
             
         </li>
 
@@ -203,7 +204,8 @@
 
 <!-- .research -->
 <div id="research" class="content_2">
-<h1 class="h-bloc">Research Experience</h1><br> 
+<!-- <h1 class="h-bloc">Research Experience</h1><br>  -->
+<br>
 
 <div class="col-md-12">
     <div class="row">
@@ -213,8 +215,8 @@
             <!-- start Page research -->
             <section id="research-page">
 
-                <!-- Post 8 -->	
-                <article id="post-8" class="research-article">                    
+                <!-- Post 10 -->	
+                <article id="FastNSF" class="research-article">                    
 
                     <div class="col-md-12">
 
@@ -223,27 +225,181 @@
                             <div class="col-md-12 post_media">
 
                                 <div class="title_content">
-                                    <div class="text_content">Neural Scene Flow Prior</div>
+                                    <div class="text_content">Fast Neural Scene Flow</div>
                                     <div class="clear"></div>
                                 </div>
 
                                 <ul class="info">
-                                    <li><a href='' target='_blank'> NeurIPS 2021 (spotlight) </a></li>
-                                    <li><a href='https://github.com/Lilac-Lee/Neural_Scene_Flow_Prior' target='_blank'> code </a></li>
-                                    <li><a href='https://drive.google.com/file/d/1kvLvt9B6e0_j6VjzKAhnyWDDuM-v1zd0/preview' target='_blank'> poster </a></li>
-                                    
-                                    
+                                    <li><a href='https://lilac-lee.github.io/FastNSF/' target='_blank'> ICCV 2023 </a></li>
+                                    <li><a href='https://github.com/Lilac-Lee/FastNSF' target='_blank'> code </a></li>
+                                    <li><a href='https://drive.google.com/file/d/1hZViB1jpU-o1LFCbSkX45GWWzJw-z5Xi/preview' target='_blank'> poster </a></li>
+                                    <li><a href='https://www.youtube.com/watch?v=4OsY_0iAI_I&feature=youtu.be' target='_blank'> video </a></li>
                                 </ul>
 
                                 <div class="research-content">
                                     <div class="text_content_p">
-                                    We propose a neural scene flow prior that
-                                    utilizes the architecture of neural networks (MLPs) as an implicit regularizer. 
-                                    Unlike learning-based scene flow methods, optimization occurs at runtime, 
-                                    and our approach needs no offline datasets -- making it ideal for deployment in 
-                                    new environments such as autonomous driving. 
-                                    Also, the implicit and continuous scene flow representation allows us to estimate 
-                                    dense long-term correspondences across a sequence of point clouds. 
+                                        Neural Scene Flow Prior (NSFP) is of significant interest to the vision community due to its inherent robustness to
+                                        out-of-distribution (OOD) effects and its ability to deal with dense lidar points. 
+                                        The approach utilizes a coordinate neural network to estimate scene flow at runtime, without any training. 
+                                        However, it is up to 100 times slower than current state-of-the-art learning methods. 
+                                        We rediscover the distance transform (DT) as an efficient, correspondence-free loss function that dramatically speeds up 
+                                        the runtime optimization, allowing for the first time real-time performance comparable to learning methods.
+                                    </div>
+                                </div>
+
+                                <div class="media">
+                                    <div class="he-wrap tpl2">
+                                        <div id="carousel-10" class="carousel slide" data-ride="carousel">
+
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-10" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-10" data-slide-to="1"></li>
+                                                <li data-target="#carousel-10" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+
+                                                <div class="item active">
+                                                    <img src="https://drive.google.com/uc?id=1BjwpjQx9xONfH8ah5iI2URYPHl6DBr0P" />
+                                                </div>
+
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1W1bgMVvJRmXJWCR9CJCiNPCBtLATM1Nk" />
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1_ri8kU1J0-PNK3bF4sT227tSQB1cOPwj" />
+                                                </div>
+
+                                            </div>
+
+                                            <a class="left carousel-control" href="#carousel-10" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </a>
+
+                                            <a class="right carousel-control" href="#carousel-10" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+                <!-- End Post 10 -->
+
+                <!-- Post 9 -->	
+                <article id="Complex PE" class="research-article">                    
+
+                    <div class="col-md-12">
+
+                        <div class="row">
+
+                            <div class="col-md-12 post_media">
+
+                                <div class="title_content">
+                                    <div class="text_content">Trading Positional Complexity vs. Deepness in Coordinate Networks</div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <ul class="info">
+                                    <li><a href='https://osiriszjq.github.io/complex_encoding/' target='_blank'> ECCV 2022 </a></li>
+                                    <li><a href='https://github.com/osiriszjq/complex_encoding' target='_blank'> code </a></li>
+                                    <!-- <li><a href='https://arxiv.org/pdf/2205.08987.pdf' target='_blank'> paper </a></li> -->
+                                </ul>
+
+                                <div class="research-content">
+                                    <div class="text_content_p">
+                                        We use non-Fourier positional encodings (<i>e.g.</i>, shifted Gaussian functions)
+                                        to show the signal reconstruction is determined by a trade-off between 
+                                        the stable rank of the embedding and the distance preservation between embedded coordinates. 
+                                        Furthermore, employing a complex positional encoding requires only a linear 
+                                        (rather than deep) function to achieve comparable performance,
+                                        while being orders of magnitude faster than current state-of-the-art.
+                                    </div>
+                                </div>
+
+                                <div class="media">
+                                    <div class="he-wrap tpl2">
+                                        <div id="carousel-9" class="carousel slide" data-ride="carousel">
+
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-9" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-9" data-slide-to="1"></li>
+                                                <li data-target="#carousel-9" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+
+                                                <div class="item active">
+                                                    <img src="https://drive.google.com/uc?id=1i0du5h6HMK86-WSUyDYIUlsXbYerw59o" />
+                                                </div>
+
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1PeLoYxift2zICF_oDcAdMLuKYsPHEoYW" />
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=19duzlGRkCP4oSdlIt66nyjwZabgIBE43" />
+                                                </div>
+
+                                            </div>
+
+                                            <a class="left carousel-control" href="#carousel-9" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </a>
+
+                                            <a class="right carousel-control" href="#carousel-9" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+                <!-- End Post 9 -->
+
+                <div class="clear"></div>
+
+                <!-- Post 8 -->	
+                <article id="NPT" class="research-article">                    
+
+                    <div class="col-md-12">
+
+                        <div class="row">
+
+                            <div class="col-md-12 post_media">
+
+                                <div class="title_content">
+                                    <div class="text_content">Neural Prior for Trajectory Estimation</div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <ul class="info">
+                                    <li><a href='https://mightychaos.github.io/projects/cvpr22/supplementary/supp.html' target='_blank'> CVPR 2022 </a></li>
+                                    <li><a href='https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Neural_Prior_for_Trajectory_Estimation_CVPR_2022_paper.pdf' target='_blank'> paper </a></li>
+                                </ul>
+
+                                <div class="research-content">
+                                    <div class="text_content_p">
+                                    Traditionally, trajectories have been represented by a set of
+                                    handcrafted bases that have limited expressibility. 
+                                    Here, we propose a neural trajectory prior to capture continuous spatio-temporal information 
+                                    without the need for offline data. 
+                                    We demonstrate how our proposed objective is optimized during runtime to estimate trajectories
+                                    for two important tasks: Non-Rigid Structure from Motion (NRSfM) and
+                                    lidar scene flow integration for self-driving scenes. 
                                     </div>
                                 </div>
 
@@ -260,16 +416,15 @@
                                             <div class="carousel-inner">
 
                                                 <div class="item active">
-                                                    <img src="https://drive.google.com/uc?id=11eEdvQtm4A2nZY4ujPj-SXtlKAMqw3n9" />
+                                                    <img src="https://drive.google.com/uc?id=191JXyRFP2QJuWWQIWUT7rtd06H4oBeAD" />
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1kkl1-VgQMYz0kdFMymR2DXUA50kAcAMj" />
                                                 </div>
 
-
                                                 <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1GVMz-ljlXUKlx-r586jPh3EJ6yCOF6M3" />
-                                                </div>
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1WRNC7LpJstvobHmN6_jm2ky_qDGVxhtw" />
+                                                    <img src="https://drive.google.com/uc?id=191rsrd86vI4Xr-9-fWN-13cTntGE30fd" />
                                                 </div>
 
                                             </div>
@@ -293,8 +448,10 @@
                 </article>
                 <!-- End Post 8 -->
 
+                <div class="clear"></div>
+
                 <!-- Post 7 -->	
-                <article id="post-7" class="research-article">                    
+                <article id="NSFP" class="research-article">                    
 
                     <div class="col-md-12">
 
@@ -303,25 +460,26 @@
                             <div class="col-md-12 post_media">
 
                                 <div class="title_content">
-                                    <div class="text_content">PointNetLK Revisited</div>
+                                    <div class="text_content">Neural Scene Flow Prior</div>
                                     <div class="clear"></div>
                                 </div>
 
                                 <ul class="info">
-                                    
-                                    <li><a href='https://arxiv.org/pdf/2008.09527.pdf' target='_blank'> CVPR 2021 (oral) </a></li>
-                                    <li><a href='https://github.com/Lilac-Lee/PointNetLK_Revisited.git' target='_blank'> code </a></li>
-                                    <li><a href='https://drive.google.com/file/d/1KVlcwTo2dK7dDuPVsyR6QqOWtH7BYxLl/preview' target='_blank'> poster </a></li>
-                                    <li><a href='https://www.youtube.com/watch?v=L8dWTFryhLI&feature=youtu.be' target='_blank'> video </a></li>
-                                    <li><a href='https://jhonykaesemodel.com/publication/pointnetlk-cvpr2021' target='_blank'> project </a></li>
+                                    <li><a href='https://lilac-lee.github.io/Neural_Scene_Flow_Prior' target='_blank'> NeurIPS 2021 (spotlight) </a></li>
+                                    <li><a href='https://github.com/Lilac-Lee/Neural_Scene_Flow_Prior' target='_blank'> code </a></li>
+                                    <li><a href='https://drive.google.com/file/d/1GrUhshiwhgaV42Jyh7EBu055EI9RtqNx/preview' target='_blank'> poster </a></li>
+                                    <li><a href='https://www.youtube.com/watch?v=WMcoLINtDYY&feature=youtu.be' target='_blank'> video </a></li>
                                 </ul>
 
                                 <div class="research-content">
                                     <div class="text_content_p">
-                                    We revisit a recent innovation -- PointNetLK -- and show that the inclusion of an analytical Jacobian 
-                                    can exhibit remarkable generalization properties while reaping the inherent fidelity benefits 
-                                    of a learning framework. Our approach not only outperforms the state-of-the-art in mismatched conditions
-                                    but also produces results competitive with current learning methods when operating on real-world test data close to the training set.
+                                    We propose a neural scene flow prior that
+                                    utilizes the architecture of neural networks (MLPs) as an implicit regularizer. 
+                                    Unlike learning-based scene flow methods, optimization occurs at runtime, 
+                                    and our approach needs no offline datasets -- making it ideal for deployment in 
+                                    new environments such as autonomous driving. 
+                                    Also, the implicit and continuous scene flow representation allows us to estimate 
+                                    dense long-term correspondences across a sequence of point clouds. 
                                     </div>
                                 </div>
 
@@ -338,16 +496,15 @@
                                             <div class="carousel-inner">
 
                                                 <div class="item active">
-                                                    <img src="https://drive.google.com/uc?id=1U4sLV8d_u5Kz5Z6O14rvbU46hJaEX59E" />
-                                                </div>
-
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1zuxR367QxfHwNAmQ81i5vO8T4SLIUtkj" />
+                                                    <img src="https://drive.google.com/uc?id=11eEdvQtm4A2nZY4ujPj-SXtlKAMqw3n9" />
                                                 </div>
 
                                                 <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1oT9LxP_382Rurx1GUMpcrXwgbrIpMe77" />
+                                                    <img src="https://drive.google.com/uc?id=1GVMz-ljlXUKlx-r586jPh3EJ6yCOF6M3" />
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1WRNC7LpJstvobHmN6_jm2ky_qDGVxhtw" />
                                                 </div>
 
                                             </div>
@@ -371,8 +528,89 @@
                 </article>
                 <!-- End Post 7 -->
 
+                <div class="clear"></div>
+
                 <!-- Post 6 -->	
-                <article id="post-6" class="research-article">                    
+                <article id="PointNetLK" class="research-article">                    
+
+                    <div class="col-md-12">
+
+                        <div class="row">
+
+                            <div class="col-md-12 post_media">
+
+                                <div class="title_content">
+                                    <div class="text_content">PointNetLK Revisited</div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <ul class="info">
+                                    <li><a href='https://arxiv.org/pdf/2008.09527.pdf' target='_blank'> CVPR 2021 (oral) </a></li>
+                                    <li><a href='https://github.com/Lilac-Lee/PointNetLK_Revisited.git' target='_blank'> code </a></li>
+                                    <li><a href='https://drive.google.com/file/d/1KVlcwTo2dK7dDuPVsyR6QqOWtH7BYxLl/preview' target='_blank'> poster </a></li>
+                                    <li><a href='https://www.youtube.com/watch?v=L8dWTFryhLI&feature=youtu.be' target='_blank'> video </a></li>
+                                    <li><a href='https://jhonykaesemodel.com/publication/pointnetlk-cvpr2021' target='_blank'> project </a></li>
+                                </ul>
+
+                                <div class="research-content">
+                                    <div class="text_content_p">
+                                    We revisit a recent innovation -- PointNetLK -- and show that the inclusion of an analytical Jacobian 
+                                    can exhibit remarkable generalization properties while reaping the inherent fidelity benefits 
+                                    of a learning framework. Our approach not only outperforms the state-of-the-art in mismatched conditions
+                                    but also produces results competitive with current learning methods when operating on real-world test data close to the training set.
+                                    </div>
+                                </div>
+
+                                <div class="media">
+                                    <div class="he-wrap tpl2">
+                                        <div id="carousel-6" class="carousel slide" data-ride="carousel">
+
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-6" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-6" data-slide-to="1"></li>
+                                                <li data-target="#carousel-6" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+
+                                                <div class="item active">
+                                                    <img src="https://drive.google.com/uc?id=1U4sLV8d_u5Kz5Z6O14rvbU46hJaEX59E" />
+                                                </div>
+
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1zuxR367QxfHwNAmQ81i5vO8T4SLIUtkj" />
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1oT9LxP_382Rurx1GUMpcrXwgbrIpMe77" />
+                                                </div>
+
+                                            </div>
+
+                                            <a class="left carousel-control" href="#carousel-6" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </a>
+
+                                            <a class="right carousel-control" href="#carousel-6" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+                <!-- End Post 6 -->
+
+                <div class="clear"></div>
+
+                <!-- Post 5 -->	
+                <!-- <article id="One Framework" class="research-article">                    
 
                     <div class="col-md-12">
 
@@ -403,12 +641,12 @@
 
                                 <div class="media">
                                     <div class="he-wrap tpl2">
-                                        <div id="carousel-6" class="carousel slide" data-ride="carousel">
+                                        <div id="carousel-5" class="carousel slide" data-ride="carousel">
 
                                             <ol class="carousel-indicators">
-                                                <li data-target="#carousel-6" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carousel-6" data-slide-to="1"></li>
-                                                <li data-target="#carousel-6" data-slide-to="2"></li>
+                                                <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-5" data-slide-to="1"></li>
+                                                <li data-target="#carousel-5" data-slide-to="2"></li>
                                             </ol>
 
                                             <div class="carousel-inner">
@@ -428,11 +666,11 @@
 
                                             </div>
 
-                                            <a class="left carousel-control" href="#carousel-6" data-slide="prev">
+                                            <a class="left carousel-control" href="#carousel-5" data-slide="prev">
                                                 <span class="glyphicon glyphicon-chevron-left"></span>
                                             </a>
 
-                                            <a class="right carousel-control" href="#carousel-6" data-slide="next">
+                                            <a class="right carousel-control" href="#carousel-5" data-slide="next">
                                                 <span class="glyphicon glyphicon-chevron-right"></span>
                                             </a>
 
@@ -444,12 +682,13 @@
                         </div>
 
                     </div>
-                </article>
-                <!-- End Post 6 -->
+                </article> -->
+                <!-- End Post 5 -->
 
+                <!-- <div class="clear"></div> -->
 
-                <!-- Post 5 -->	
-                <article id="post-5" class="research-article">                    
+                <!-- Post 4 -->	
+                <article id="PCRNet" class="research-article">                    
 
                     <div class="col-md-12">
 
@@ -479,81 +718,6 @@
 
                                 <div class="media">
                                     <div class="he-wrap tpl2">
-                                        <div id="carousel-5" class="carousel slide" data-ride="carousel">
-
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carousel-5" data-slide-to="1"></li>
-                                                <li data-target="#carousel-5" data-slide-to="2"></li>
-                                            </ol>
-
-                                            <div class="carousel-inner">
-
-                                                <div class="item active">
-                                                    <img src="https://drive.google.com/uc?id=1ndY2k0BLwwYhg7cf94AlAO5hfW7yOefn" />
-                                                </div>
-
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1abw3bkmQMad8sJxwoMuqxeCUtx1gB33x" />
-                                                </div>
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1MYMpHvWJWHmeTPdZ4pDSm5zF6ga9wmdw" />
-                                                </div>
-
-                                            </div>
-
-                                            <a class="left carousel-control" href="#carousel-5" data-slide="prev">
-                                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                            </a>
-
-                                            <a class="right carousel-control" href="#carousel-5" data-slide="next">
-                                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </article>
-                <!-- End Post 5 -->
-
-                <div class="clear"></div>
-
-                <!-- Post 4 -->
-                <article id="post-4" class="research-article">                    
-
-                    <div class="col-md-12">
-
-                        <div class="row">
-
-                            <div class="col-md-12 post_media">
-
-                                <div class="title_content">
-                                    <div class="text_content">A Multi-Domain Feature Learning Method for Visual Place Recognition</div>
-                                    <div class="clear"></div>
-                                </div>
-
-                                <ul class="info">
-                                    <li><a href='https://arxiv.org/pdf/1902.10058.pdf' target='_blank'> ICRA 2019 </a></li>
-                                    <li><a href='https://www.youtube.com/watch?v=dS028yXKNlw' target='_blank'> video </a></li>
-                                    
-                                </ul>
-
-                                <div class="research-content">
-                                    <div class="text_content_p">We propose a multi-domain feature learning-based visual place recognition method with 2 modules:
-                                    feature extraction module, which uses CapsuleNet to extract features under different circumstances; 
-                                    feature separation module, which enforces a separation in environmental condition-invariant and condition-related domains. 
-                                    Combining 2 modules through sequential matching, we can find potential match. </div>
-                                </div>
-
-                                <div class="media">
-                                    <div class="he-wrap tpl2">
                                         <div id="carousel-4" class="carousel slide" data-ride="carousel">
 
                                             <ol class="carousel-indicators">
@@ -565,16 +729,15 @@
                                             <div class="carousel-inner">
 
                                                 <div class="item active">
-                                                    <img src="https://drive.google.com/uc?id=1hYqoRNcjLEoGtUOgvduPGyTr2w5yjElD" />
-                                                </div>
-
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1SzcNGBwoUuVXRUaN8vYnT-27LbZRpdi3" />
+                                                    <img src="https://drive.google.com/uc?id=1ndY2k0BLwwYhg7cf94AlAO5hfW7yOefn" />
                                                 </div>
 
                                                 <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=14q_7rVsmmlDtL0VTnE_tnpoSeLf8kC60" />
+                                                    <img src="https://drive.google.com/uc?id=1abw3bkmQMad8sJxwoMuqxeCUtx1gB33x" />
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1MYMpHvWJWHmeTPdZ4pDSm5zF6ga9wmdw" />
                                                 </div>
 
                                             </div>
@@ -601,7 +764,7 @@
                 <div class="clear"></div>
 
                 <!-- Post 3 -->
-                <article id="post-3" class="research-article">                    
+                <article id="Multi-Domain" class="research-article">                    
 
                     <div class="col-md-12">
 
@@ -610,22 +773,20 @@
                             <div class="col-md-12 post_media">
 
                                 <div class="title_content">
-                                    <div class="text_content">MRS-VPR: A Multi-resolution Sampling-based Global Visual Place Recognition Method</div>
+                                    <div class="text_content">A Multi-Domain Feature Learning Method for Visual Place Recognition</div>
                                     <div class="clear"></div>
                                 </div>
 
                                 <ul class="info">
-                                    <li><a href='https://arxiv.org/pdf/1902.10059.pdf' target='_blank'> ICRA 2019 </a></li>
-                                    <li><a href='https://www.youtube.com/watch?v=2Pu_4kDFtMI' target='_blank'> video </a></li>
-                                    
+                                    <li><a href='https://arxiv.org/pdf/1902.10058.pdf' target='_blank'> ICRA 2019 </a></li>
+                                    <li><a href='https://www.youtube.com/watch?v=dS028yXKNlw' target='_blank'> video </a></li>
                                 </ul>
 
                                 <div class="research-content">
-                                    <div class="text_content_p">In order to perform sequence matching between short-term testing frame and long-term reference frame in visual place recognition,
-                                    we develop a multi-resolution sampling-based global search method with coarse-to-fine searching and particle filter, 
-                                    which balances the matching accuracy and searching efficiency.
-                                    By iteratively updating both potential trajectories and frame sequences through low resolution to high resolution,
-                                    we can find the best match under the highest resolution level.</div>
+                                    <div class="text_content_p">We propose a multi-domain feature learning-based visual place recognition method with 2 modules:
+                                    feature extraction module, which uses CapsuleNet to extract features under different circumstances; 
+                                    feature separation module, which enforces a separation in environmental condition-invariant and condition-related domains. 
+                                    Combining 2 modules through sequential matching, we can find potential match. </div>
                                 </div>
 
                                 <div class="media">
@@ -641,16 +802,15 @@
                                             <div class="carousel-inner">
 
                                                 <div class="item active">
-                                                    <img src="https://drive.google.com/uc?id=1Kplqf3qqmLnJ0Gl6VHbLHLNhZViVeD_L" />
-                                                </div>
-
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1lpuuREvSbTg7b38Fr3pqjLBzO4ryXXCs" />
+                                                    <img src="https://drive.google.com/uc?id=1hYqoRNcjLEoGtUOgvduPGyTr2w5yjElD" />
                                                 </div>
 
                                                 <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1N2_H9SUf__wfKcIId9ew8wIri5eFrDCQ" />
+                                                    <img src="https://drive.google.com/uc?id=1SzcNGBwoUuVXRUaN8vYnT-27LbZRpdi3" />
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=14q_7rVsmmlDtL0VTnE_tnpoSeLf8kC60" />
                                                 </div>
 
                                             </div>
@@ -674,10 +834,82 @@
                 </article>
                 <!-- End Post 3 -->
 
-                
+                <div class="clear"></div>
+
+                <!-- Post 2 -->
+                <article id="MRS-VPR" class="research-article">                    
+
+                    <div class="col-md-12">
+
+                        <div class="row">
+
+                            <div class="col-md-12 post_media">
+
+                                <div class="title_content">
+                                    <div class="text_content">MRS-VPR: A Multi-Resolution Sampling-based Global Visual Place Recognition Method</div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <ul class="info">
+                                    <li><a href='https://arxiv.org/pdf/1902.10059.pdf' target='_blank'> ICRA 2019 </a></li>
+                                    <li><a href='https://www.youtube.com/watch?v=2Pu_4kDFtMI' target='_blank'> video </a></li>
+                                </ul>
+
+                                <div class="research-content">
+                                    <div class="text_content_p">In order to perform sequence matching between short-term testing frame and long-term reference frame in visual place recognition,
+                                    we develop a multi-resolution sampling-based global search method with coarse-to-fine searching and particle filter, 
+                                    which balances the matching accuracy and searching efficiency.
+                                    By iteratively updating both potential trajectories and frame sequences through low resolution to high resolution,
+                                    we can find the best match under the highest resolution level.</div>
+                                </div>
+
+                                <div class="media">
+                                    <div class="he-wrap tpl2">
+                                        <div id="carousel-2" class="carousel slide" data-ride="carousel">
+
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-2" data-slide-to="1"></li>
+                                                <li data-target="#carousel-2" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+
+                                                <div class="item active">
+                                                    <img src="https://drive.google.com/uc?id=1Kplqf3qqmLnJ0Gl6VHbLHLNhZViVeD_L" />
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1lpuuREvSbTg7b38Fr3pqjLBzO4ryXXCs" />
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="https://drive.google.com/uc?id=1N2_H9SUf__wfKcIId9ew8wIri5eFrDCQ" />
+                                                </div>
+
+                                            </div>
+
+                                            <a class="left carousel-control" href="#carousel-2" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </a>
+
+                                            <a class="right carousel-control" href="#carousel-2" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+                <!-- End Post 2 -->
 
                 <!-- Post 1 -->
-                <article id="post-1" class="research-article">                    
+                <article id="Medical" class="research-article">                    
 
                     <div class="col-md-12">
 
@@ -691,9 +923,7 @@
                                 </div>
 
                                 <ul class="info">
-                                    
                                     <li><a href='https://www.youtube.com/watch?v=LZF8wz00_0k&feature=youtu.be' target='_blank'> video </a></li>
-                                    
                                 </ul>
 
                                 <div class="research-content">
@@ -718,7 +948,6 @@
                                                 <div class="item active">
                                                     <img src="https://drive.google.com/uc?id=1M2Z9k6OTmS76sbIKX1dFc3R_q4H7qDev" />
                                                 </div>
-
 
                                                 <div class="item">
                                                     <img src="https://drive.google.com/uc?id=1L2wEeTXWbFN6v_W9GNulUoc10dI5tlw7" />
@@ -749,8 +978,6 @@
                 </article>
                 <!-- End Post 1 -->
 
-                
-
             </section>
 
             <!-- End Page research -->
@@ -759,377 +986,180 @@
 </div>
 </div>
 <!-- End .research -->
-<!-- .academic -->
-<div id="academic" class="content_2">
-<h1 class="h-bloc">Academic Project</h1><br> 
 
-<div class="col-md-12">
-    <div class="row">
-
-        <!-- Page academic -->
-        <div class="col-md-12" id="academic_page">
-            <!-- start Page academic -->
-            <section id="academic-page">
-
-                <!-- Post 3-academic -->
-                <article id="post-3-academic" class="research-article">                    
-
-                    <div class="col-md-12">
-
-                        <div class="row">
-
-                            <div class="col-md-12 post_media">
-
-                                <div class="title_content">
-                                    <div class="text_content"> Using Deep Kernels in Time Varying Networks for 
-                                    Reverse-Engineering of Gene Interaction
-                                    <br>
-                                    (Course: Probabilistic Graphical Models)</div>
-                                    <div class="clear"></div>
-                                </div>
-
-                                <ul class="info">
-                                    <li><a href='https://drive.google.com/file/d/18uIj6XiKTK2PBoXFXMbMrktwzbWDkaFv/preview' target='_blank'> poster </a></li>
-                                    <li><a href='https://drive.google.com/file/d/17ITnSQPwcZrPOCTjt8yp4oQu_7pGmBt3/preview' target='_blank'> report </a></li>
-                                </ul>
-
-                                <div class="research-content">
-                                    <div class="text_content_p">We explore the performance of deep kernels on graphical models, 
-                                    which incorporates both the structural properties of deep learning architectures 
-                                    with non-parametric flexibility of kernels.
-                                    In our project, we aim to solve the task of reverse-engineering of gene interaction. 
-                                    Inspired by KELLER, Pairwise MRF is used to model interactions between genes. 
-                                    Deep kernels, constructed from neural network and LSTM are used for learning 
-                                    parameters of the Pairwise MRF.
-                                    </div>
-                                </div>
-
-                                <div class="media">
-                                    <div class="he-wrap tpl2">
-                                        <div id="carousel-3-academic" class="carousel slide" data-ride="carousel">
-
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carousel-3-academic" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carousel-3-academic" data-slide-to="1"></li>
-                                                <li data-target="#carousel-3-academic" data-slide-to="2"></li>
-                                            </ol>
-
-                                            <div class="carousel-inner">
-
-                                                <div class="item active">
-                                                    
-                                                    <img src="https://drive.google.com/uc?id=1MIn7PLa4-aXO5n45rapjbxkgU1rV8Lkv" />
-                                                </div>
-
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1NSsGXb3b5DYZPlOyXNCyDeb1c54E2UJr" />
-                                                </div>
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1GuK3mBjk9Mu8hMMmCLxORY2KU3dYVRoB" alt="" />
-                                                </div>
-
-                                            </div>
-
-                                            <a class="left carousel-control" href="#carousel-3-academic" data-slide="prev">
-                                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                            </a>
-
-                                            <a class="right carousel-control" href="#carousel-3-academic" data-slide="next">
-                                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </article>
-                <!-- End Post 3-academic -->
-
-                <!-- Post 2-academic -->
-                <article id="post-2-academic" class="research-article">                    
-
-                    <div class="col-md-12">
-
-                        <div class="row">
-
-                            <div class="col-md-12 post_media">
-
-                                <div class="title_content">
-                                    <div class="text_content">Purcue Playing with Polar Bear (Course: Computer Vision)</div>
-                                    <div class="clear"></div>
-                                </div>
-
-                                <ul class="info">
-                                    <li><a href='https://drive.google.com/file/d/1pWjcmVOuGsPN7Nc6m6zrgUIUJoscraba/preview' target='_blank'> presentation </a></li>
-                                    <li><a href='https://www.youtube.com/watch?v=p0SvxZoDvLQ&feature=youtu.be' target='_blank'> video </a></li>
-                                </ul>
-
-                                <div class="research-content">
-                                    <div class="text_content_p">Instead of using the raw image to do Lucas-Kanade tracking, I utilize Difference of Gaussian
-                                    Pyramid features to do efficient tracking of 2 images of Purcue.
-                                    I estimate the intrinsic of the camera and perform 3D reconstruction of Purcue.
-                                    With the combination of Lucas-Kanada algorithm and random affine warp to the point cloud,
-                                    my Purcue is now playing with polar bear in the video.
-                                    </div>
-                                </div>
-
-                                <div class="media">
-                                    <div class="he-wrap tpl2">
-                                        <div id="carousel-2-academic" class="carousel slide" data-ride="carousel">
-
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carousel-2-academic" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carousel-2-academic" data-slide-to="1"></li>
-                                                <li data-target="#carousel-2-academic" data-slide-to="2"></li>
-                                            </ol>
-
-                                            <div class="carousel-inner">
-
-                                                <div class="item active">
-                                                    <img src="https://drive.google.com/uc?id=1c0ZNnayNzn1slnpCEmvjUyVJPKp-Kciu" />
-                                                </div>
-
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1aaBLBQMyTbZjDHppMxyzCAypp67cqaK0" />
-                                                </div>
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=10Z4AYz0Dg6aL_iW_6k2MeghGeCHqDYql" />
-                                                </div>
-
-                                            </div>
-
-                                            <a class="left carousel-control" href="#carousel-2-academic" data-slide="prev">
-                                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                            </a>
-
-                                            <a class="right carousel-control" href="#carousel-2-academic" data-slide="next">
-                                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </article>
-                <!-- End Post 2-academic -->
-
-                <!-- Post 1-academic -->
-                <article id="post-1-academic" class="research-article">                    
-
-                    <div class="col-md-12">
-
-                        <div class="row">
-
-                            <div class="col-md-12 post_media">
-
-                                <div class="title_content">
-                                    <div class="text_content">Navigation in Wild World (Course: Deep RL and Control)</div>
-                                    <div class="clear"></div>
-                                </div>
-
-                                <ul class="info">
-                                    <li><a href='https://drive.google.com/file/d/1ovas1WWTsR10Q12KCWyjQ8J-kQt73xLu/preview' target='_blank'> poster </a></li>
-                                    <li><a href='https://drive.google.com/file/d/1jQUKj2XC9sBJdPqe03D-4bsx6IfC7eaK/preview' target='_blank'> report </a></li>
-                                </ul>
-
-                                <div class="research-content">
-                                    <div class="text_content_p">We apply Double DQN, Dueling DQN, A2C, A3C and DDPG to the grid-world navigation problem
-                                    with various reward reshaping techniques and different inputs.
-                                    Though scent perception can yield good performance for Double DQN and Dueling DQN,
-                                    adding vision perception helps refine the prediction.
-                                    A2C, A3C and DDPG is not suitable for this discrete grid-world setting.
-                                    </div>
-                                </div>
-
-                                <div class="media">
-                                    <div class="he-wrap tpl2">
-                                        <div id="carousel-1-academic" class="carousel slide" data-ride="carousel">
-
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carousel-1-academic" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carousel-1-academic" data-slide-to="1"></li>
-                                                <li data-target="#carousel-1-academic" data-slide-to="2"></li>
-                                            </ol>
-
-                                            <div class="carousel-inner">
-
-                                                <div class="item active">
-                                                    <img src="https://drive.google.com/uc?id=1NcU2R-h9-VmQy8sEyyHZ_ACx5nFaRnu3" />
-                                                </div>
-
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=1ND_DlxdXKPK9LYYo99qgsDtLeIygh1I1" />
-                                                </div>
-
-                                                <div class="item">
-                                                    <img src="https://drive.google.com/uc?id=18YO-uwYUDVX9-mwMv0_lTMZ5S2kI1yeJ" />
-                                                </div>
-
-                                            </div>
-
-                                            <a class="left carousel-control" href="#carousel-1-academic" data-slide="prev">
-                                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                            </a>
-
-                                            <a class="right carousel-control" href="#carousel-1-academic" data-slide="next">
-                                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </article>
-                <!-- End Post 1-academic -->
-
-            </section>
-
-            <!-- End Page academic -->
-        </div>
-    </div>
-</div>
-</div>
-<!-- End .academic -->
 <!-- publications -->
 <div id="publications" class="content_2">
-<h1 class="h-bloc">Publications</h1><br>
+<!-- <h1 class="h-bloc">Publications</h1><br> -->
+<br>
 
 <div class="col-md-12">
     <div class="row">
         <div class="col-md-12" id="research_page">
             <article id="post-2" class="research-article">  
                 <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-12 post_media">
-                                <div class="title_content">
-                                    <div class="text_content">Conference & arXiv</div>
-                                    <div class="clear"></div>
+                    <div class="row">
+                        <div class="col-md-12 post_media">
+                            <div class="title_content">
+                                <div class="text_content">Conference & arXiv</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text_content_bullet">
+                                    Kavisha Vidanapathirana, Shin-Fang Ch'ng, <strong>Xueqian Li</strong>, Simon Lucey.
+                                    <a href='https://arxiv.org/pdf/2310.10301.pdf' target='_blank'>
+                                    Multi-Body Neural Scene Flow.</a> <font color="#FF0000"><strong>3DV 2023 (Oral)</strong></font>
                                 </div>
-                                <div class="text_content_p"><strong>Xueqian Li</strong>, Jhony Kaesemodel Pointes, Simon Lucey.
-                                <a href='' target='_blank'>Neural Scene Flow Prior</a> <strong>NeurIPS 2021 (spotlight)</strong> </div>
-                                <div class="text_content_p"><strong>Xueqian Li</strong>, Jhony Kaesemodel Pointes, Simon Lucey.
-                                <a href='https://arxiv.org/pdf/2008.09527v2.pdf' target='_blank'>PointNetLK Revisited</a> <strong>CVPR 2021 (oral)</strong> </div>
-                                <div class="text_content_p">Vinit Sarode*, <strong>Xueqian Li</strong>*, Hunter Goforth, Yasuhiro Aoki, Animesh Dhagat, Arun R. Srivatsan, Simon Lucey, Howie Choset.
-                                <a href='https://arxiv.org/pdf/1912.05766.pdf' target='_blank'>One Framework to Register Them All: PointNet Encoding for Point Cloud Alignment</a> <strong>arXiv preprint</strong> arXiv:1912.05766. 
-                                (* equal contribution)</div>
-                                <div class="text_content_p">Vinit Sarode*, <strong>Xueqian Li</strong>*, Hunter Goforth, Yasuhiro Aoki, Arun R. Srivatsan, Simon Lucey, Howie Choset.
-                                <a href='https://arxiv.org/pdf/1908.07906.pdf' target='_blank'>PCRNet: Point Cloud Registration Network using PointNet Encoding.</a> <strong>arXiv preprint</strong> arXiv:1908.07906. 
-                                (* equal contribution)</div>
-                                <div class="text_content_p">Peng Yin, Lingyun Xu, <strong>Xueqian Li</strong>, Yin Chen, Yingli Li, R. Arun Srivatsan, Lu Li, Jianmin Ji, and Yuqing He.
-                                <a href='https://ieeexplore.ieee.org/document/8793752' target='_blank'>A Multi-Domain Feature Learning Method for Visual Place Recognition.</a> <strong>ICRA 2019</strong></div>
-                                <div class="text_content_p">Peng Yin, R. Arun Srivatsan, Yin Chen, <strong>Xueqian Li</strong>, Hongda Zhang, Lingyun Xu, Lu Li, Zhenzhong Jia, Jiamin Ji and Yuqing He.
-                                <a href='https://ieeexplore.ieee.org/document/8793853' target='_blank'>MRS-VPR: a multi-resolution sampling based global visual place recognition method.</a><strong> ICRA 2019</strong></div>
+                                <div class="text_content_bullet">
+                                    Jianqiao Zheng, <strong>Xueqian Li</strong>, Sameera Ramasinghe, Simon Lucey. <a href='https://arxiv.org/pdf/2309.00339.pdf' target='_blank'>
+                                    Robust Point Cloud Processing through Positional Embedding.</a> <strong>3DV 2024</strong>
+                                </div>
+                                <div class="text_content_bullet">
+                                    <strong>Xueqian Li</strong>, Jianqiao Zheng, Francesco Ferroni, Jhony Kaesemodel Pointes, Simon Lucey.
+                                    <a href='https://arxiv.org/pdf/2304.09121.pdf' target='_blank'>
+                                    Fast Neural Scene Flow.</a> <strong>ICCV 2023</strong>
+                                </div>
+                                <div class="text_content_bullet">
+                                    Jianqiao Zheng, Sameera Ramasinghe, <strong>Xueqian Li</strong>, Simon Lucey.
+                                    <a href='https://arxiv.org/pdf/2205.08987.pdf' target='_blank'>
+                                    Trading Positional Complexity vs. Deepness in Coordinate Networks.</a> <strong>ECCV 2022</strong>
+                                </div>
+                                <div class="text_content_bullet">
+                                    Chaoyang Wang, <strong>Xueqian Li</strong>, Jhony Kaesemodel Pointes, Simon Lucey.
+                                    <a href='https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Neural_Prior_for_Trajectory_Estimation_CVPR_2022_paper.pdf' 
+                                    target='_blank'>Neural Prior for Trajectory Estimation.</a> <strong>CVPR 2022</strong>
+                                </div>
+                                <div class="text_content_bullet">
+                                    <strong>Xueqian Li</strong>, Jhony Kaesemodel Pointes, Simon Lucey.
+                                    <a href='https://arxiv.org/pdf/2111.01253.pdf' target='_blank'>Neural Scene Flow Prior.</a> 
+                                    <font color="#FF0000"><strong>NeurIPS 2021 (Spotlight)</strong></font>
+                                </div>
+                                <div class="text_content_bullet">
+                                    <strong>Xueqian Li</strong>, Jhony Kaesemodel Pointes, Simon Lucey.
+                                    <a href='https://arxiv.org/pdf/2008.09527.pdf' target='_blank'>PointNetLK Revisited.</a> 
+                                    <font color="#FF0000"><strong>CVPR 2021 (Oral)</strong></font>
+                                </div>
+                                <div class="text_content_bullet">
+                                    Vinit Sarode*, <strong>Xueqian Li</strong>*, Hunter Goforth, Yasuhiro Aoki, Animesh Dhagat, Arun R. Srivatsan, Simon Lucey, Howie Choset.
+                                    <a href='https://arxiv.org/pdf/1912.05766.pdf' target='_blank'>One Framework to Register Them All: PointNet Encoding for Point Cloud Alignment.</a> <strong>arXiv preprint</strong> arXiv:1912.05766. 
+                                    (* equal contribution)
+                                </div>
+                                <div class="text_content_bullet">
+                                    Vinit Sarode*, <strong>Xueqian Li</strong>*, Hunter Goforth, Yasuhiro Aoki, Arun R. Srivatsan, Simon Lucey, Howie Choset.
+                                    <a href='https://arxiv.org/pdf/1908.07906.pdf' target='_blank'>PCRNet: Point Cloud Registration Network using PointNet Encoding.</a> <strong>arXiv preprint</strong> arXiv:1908.07906. 
+                                    (* equal contribution)
+                                </div>
+                                <div class="text_content_bullet">
+                                    Peng Yin, Lingyun Xu, <strong>Xueqian Li</strong>, Yin Chen, Yingli Li, R. Arun Srivatsan, Lu Li, Jianmin Ji, and Yuqing He.
+                                    <a href='https://ieeexplore.ieee.org/document/8793752' target='_blank'>A Multi-Domain Feature Learning Method for Visual Place Recognition.</a> <strong>ICRA 2019</strong>
+                                </div>
+                                <div class="text_content_bullet">
+                                    Peng Yin, R. Arun Srivatsan, Yin Chen, <strong>Xueqian Li</strong>, Hongda Zhang, Lingyun Xu, Lu Li, Zhenzhong Jia, Jiamin Ji and Yuqing He.
+                                    <a href='https://ieeexplore.ieee.org/document/8793853' target='_blank'>MRS-VPR: a multi-resolution sampling based global visual place recognition method.</a><strong> ICRA 2019</strong>
+                                </div>
                             </div>
                         </div>
-                    </div>     
+                    </div>
+                </div>     
             </article>
-
+        
             <article id="post-1" class="research-article">  
                 <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-12 post_media">
-                                <div class="title_content">
-                                    <div class="text_content">Journal</div>
-                                    <div class="clear"></div>
+                    <div class="row">
+                        <div class="col-md-12 post_media">
+                            <div class="title_content">
+                                <div class="text_content">Journal</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text_content_bullet">
+                                    Huiqiang Feng, Guihua Li, Shunwen Du, Song Yang, <strong>Xueqian Li</strong>, Paul de Figueiredo, Qing-Ming Qin. (2017). 
+                                    <a href='https://onlinelibrary.wiley.com/doi/epdf/10.1111/1462-2920.13613' target='_blank'>
+                                    The septin protein S ep4 facilitates host infection by plant fungal pathogens via mediating initiation of infection structure formation.</a> 
+                                    <strong>Environmental Microbiology</strong>, 19(5), 1730-1749. 
                                 </div>
-                                <div class="text_content_p">Huiqiang Feng, Guihua Li, Shunwen Du, Song Yang, <strong>Xueqian Li</strong>, Paul de Figueiredo, Qing-Ming Qin. (2017). 
-                                <a href='https://onlinelibrary.wiley.com/doi/epdf/10.1111/1462-2920.13613' target='_blank'>
-                                The septin protein S ep4 facilitates host infection by plant fungal pathogens via mediating initiation of infection structure formation.</a> 
-                                <strong>Environmental Microbiology</strong>, 19(5), 1730-1749.</div>
                             </div>
                         </div>
-                    </div>     
+                    </div>
+                </div>
             </article>
 
         <div class="clear"></div>
         </div>
     </div>
-
 </div>
 <div class="clear"></div>
 </div>
 <!-- End .profile -->
+
 <!-- aboutme -->
 <div id="aboutme" class="content_2">
-<h1 class="h-bloc">About Me</h1><br>
+    <!-- <h1 class="h-bloc">Publications</h1><br> -->
+    <br>
 
-<div class="col-md-12">
-    <div class="row">
-        <div class="col-md-12" id="research_page">
-            <article id="post-1" class="research-article">  
-                <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-12 post_media">
-                                <div class="text_content_p">Before joining <a href= https://www.argo.ai/ target='_blank'>Argo AI</a>, 
-                                I was a research staff in Robotics Institute at 
-                                <a href= https://www.cmu.edu/ target='_blank'>Carnegie Mellon University</a>, working with 
-                                <a href= https://www.adelaide.edu.au/directory/simon.lucey/ target='_blank'>Dr. Simon Lucey</a>. 
-                                I have graduated from Carnegie Mellon University as a master's student in Biorobotics Lab, where I was advised by 
-                                
-                                <a href= https://rarunsrivatsan.github.io/ target='_blank'>Dr. Arun R. Srivatsan</a>, 
-                                and <a href= https://maxtomcmu.github.io/ target='_blank'>Dr. Yin Peng</a>. 
-                                A little bit earlier, I was an undergraduate student at <a href= http://global.jlu.edu.cn/ target='_blank'>Jilin University</a>.
-                                <div class="clear"></div>
-                                <br>
-                                I am interested in computer vision and machine learning, especially unsupervised deep geometry (3D geometry learning and unsupervised learning).
-                                My research experience covers 3D object detection, point cloud registration, visual place recognition and image segmentation.
-                                </div><br>
-                                <div class="text_content_p"></div>
-                            </div>
-                        </div>
-                    </div>     
-            </article>
-
-            <article id="post-1" class="research-article">  
-                <div class="col-md-12">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12" id="research_page">
+                <article id="post-2" class="research-article">  
+                    <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-12 post_media">
                                 <div class="title_content">
                                     <div class="text_content">Education</div>
                                     <div class="clear"></div>
                                 </div>
-                                <div class="text_content_p">Doctor of Philosophy, Mathematical & Computer Sciences, The University of Adelaide, 2021-</div>
-                                <div class="clear"></div>
-                                <div class="text_content_p">Master of Science, Biomedical Engineering, Carnegie Mellon University, 2017-2019</div>
-                                <div class="clear"></div>
-                                <div class="text_content_p">Bachelor of Science, Biological Technology, Jilin University, 2013-2017</div>
-                                <div class="clear"></div>
-                                <div class="text_content_p">Bachelor of Engineering (dual degree), Computer and Application, Jilin University, 2014-2016</div>
-                      
+                                <div class="col-md-12">
+                                    <div class="text_content_bullet">
+                                        2021-202?, <strong>The University of Adelaide</strong>, Mathematics and Computer Sciences. <br>
+                                        Working with <a href= https://scholar.google.com/citations?user=vmAe35UAAAAJ&hl=en target='_blank'>Dr. Simon Lucey</a>.
+                                    </div>
+                                    <div class="text_content_bullet">
+                                        2017-2019, <strong>Carnegie Mellon University</strong>, Biomedical Engineering. <br>
+                                        Working with <a href= https://www.cs.cmu.edu/~./choset/ target='_blank'>Dr. Howie Choset</a>, <a href= https://rarunsrivatsan.github.io/ target='_blank'>Dr. Arun Srivatsan Rangaprasad</a>, and <a href= https://metaslam.github.io/ target='_blank'>Dr. Peng Yin</a> in the <a href= https://biorobotics.ri.cmu.edu/index.php target='_blank'>Biorobotics Lab</a>.
+                                    </div>
+                                    <div class="text_content_bullet">
+                                        2013-2017, <strong>Jilin University</strong>, Biotechnology (major). <br>
+                                        <!-- I was fortunate to do my National College Students' innovation and entrepreneurship training program (国家级大学生创新创业训练计划) in the  -->
+                                    </div>
+                                    <div class="text_content_bullet">
+                                        2014-2016, <strong>Jilin University</strong>, Computer and Application (minor).
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>     
-            </article>
+                </article>
+                
+                <div class="clear"></div><br>
 
-            
-
-        <div class="clear"></div>
+                <article id="post-1" class="research-article">  
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 post_media">
+                                <div class="title_content">
+                                    <div class="text_content">Working Experience</div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text_content_bullet">
+                                        2020-2022, Research intern at <strong>Argo AI</strong>, working with <a href= https://scholar.google.com/citations?user=vmAe35UAAAAJ&hl=en target='_blank'>Dr. Simon Lucey</a> and 
+                                        <a href=https://jhonykaesemodel.com/ target='_blank'> Dr. Jhony Kaesemodel Pontes</a>.
+                                    </div>
+                                    <div class="text_content_bullet">
+                                        2019-2020, Research intern at <strong>Robotics Institute, CMU</strong>, working with <a href= https://scholar.google.com/citations?user=vmAe35UAAAAJ&hl=en target='_blank'>Dr. Simon Lucey</a> at <a href= https://www.ci2cv.net/ target='_blank'>CI2CV</a> lab.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+            <div class="clear"></div>
+            </div>
         </div>
     </div>
-
-</div>
-<div class="clear"></div>
-</div>
-<!-- End .profile -->
-
-
+    <div class="clear"></div>
+    </div>
+    <!-- End .profile -->
 
 </div>
 <!-- End #resp-tabs-container --> 

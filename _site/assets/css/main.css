@@ -837,6 +837,14 @@ a[data-title]:hover:after{
     /* padding-top: 2px; */
     /* margin-bottom: 5px; */
 }
+
+.text_content_bullet{
+    display: list-item;
+    list-style-type: disc;
+    font-family: 'Garamond Regular', Times, serif;
+    font-size: 18px;
+    padding-left: 3px;
+}
 /*--------------------------------------------------
 ---------------------- Profile ---------------------
 ---------------------------------------------------*/
@@ -2197,6 +2205,21 @@ ul.info-post li {
     background: rgba(255, 255, 255, 0.8);
     padding: 15px;
     padding-top:0;
+}
+
+.research-article .post_media_bullet{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    background: rgba(255, 255, 255, 0.8);
+    padding-bottom: 15px;
+    display: list-item;
+    list-style-type: disc;
+    font-family: 'Garamond Regular', Times, serif;
+    font-size: 18px;
+    padding-left: 25px;
 }
 
 .research-article .post_media_detail{
